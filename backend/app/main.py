@@ -5,6 +5,11 @@ from app.api.v1.routers import auth, users, events, health
 
 app = FastAPI(title=settings.app_name, version="1.0.0", openapi_url=f"{settings.api_v1_prefix}/openapi.json")
 
+
+@app.get("/")
+def root():
+    return {"message": "UCONNECT API está no ar!"}
+
 app.add_middleware(
     CORSMiddleware,
     allow_origins=["http://localhost:3000", "http://127.0.0.1:3000", "http://localhost:5173"],
