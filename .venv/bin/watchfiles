@@ -1,6 +1,4 @@
-#!/bin/sh
-'''exec' "/Users/paulosilva/Downloads/uconnect-rest-standardized 2/.venv/bin/python3.12" "$0" "$@"
-' '''
+#!/Users/paulosilva/Downloads/uconnect-rest/.venv/bin/python3.12
 import sys
 from watchfiles.cli import cli
 if __name__ == '__main__':
